@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Send to Pager</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="top-container">
+                <h2>Pager</h2>
+                <div id="pagerDisplay" class="pager-display"></div>
+            </div>
+            <div class="animation-bar-container">
+                <div id="animation-bar" class="animation-bar"></div>
+            </div>
+            <div class="bottom-container">
+                <h2>Phone</h2>
+                <div id="phoneDisplay" class="phone-display"></div>
+                <div class="keys">
+                    <button class="key" onclick="key1Pressed()">1</button>
+                    <button class="key" onclick="key2Pressed()">2</button>
+                    <button class="key" onclick="key3Pressed()">3</button>
+                    <button class="key" onclick="key4Pressed()">4</button>
+                    <button class="key" onclick="key5Pressed()">5</button>
+                    <button class="key" onclick="key6Pressed()">6</button>
+                    <button class="key" onclick="key7Pressed()">7</button>
+                    <button class="key" onclick="key8Pressed()">8</button>
+                    <button class="key" onclick="key9Pressed()">9</button>
+                    <button class="key" onclick="keyAsteriskPressed()">*</button>
+                    <button class="key" onclick="key0Pressed()">0</button>
+                    <button class="key" onclick="keyPoundPressed()">#</button>
+                </div>
+                <div class="buttons">
+                    <button id="reset">RESET</button>
+                    <button id="send">SEND</button>
+                </div>
+            </div>
+        </div>
+        <audio id="send-sound" src="supermario.mp3"></audio>
+        <script src="script.js"></script>
+    </body>
+</html>
+
